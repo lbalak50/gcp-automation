@@ -11,6 +11,6 @@ done
 
 for subImage in $subImages
 do
-    docker pull $subImage:master
+    docker pull $subImage:master 
     docker pull $subImage:latest
 done
