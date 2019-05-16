@@ -1,4 +1,8 @@
-# Exports all databases data from a Cloud SQL instance to a Google Cloud Storage bucket as a SQL dump file
+# Exports all databases data from a Cloud SQL instance to a Google Cloud Storage bucket as a SQL dump file.
+#
+# Run the following command to execute this script:
+# $ BUCKET_URI=gs://<BUCKET_NAME> INSTANCE_ID=<INSTANCE_ID> sh databse-migration.sh
+
 
 if [ -z "$BUCKET_URI" ] || [ -z "$INSTANCE_ID" ]; then
     echo 'Please pass Bucket URI and Instance ID'
